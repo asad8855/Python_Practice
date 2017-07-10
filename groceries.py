@@ -22,6 +22,22 @@ products = [
     {"id":19, "name": "Gluten Free Quinoa Three Cheese & Mushroom Blend", "department": "dry goods pasta", "aisle": "grains rice dried goods", "price": 3.99},
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ]
-print(products)
 
-# code.interact(local=locals())
+def product_name(product):
+    return product["name"]
+products=sorted(products,key=product_name)
+
+print "There Are".upper(),len(products),"Products".upper()
+
+for product in products:
+    print "+",product["name"],"($",product["price"],")"
+
+print "--------------"
+
+departments=[]
+for product in products:
+    departments.append(product["department"])
+departments.sort()
+departments=list(set(departments))
+
+print(departments)
