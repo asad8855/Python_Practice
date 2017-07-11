@@ -45,30 +45,10 @@ departments=list(set(departments))
 departments.sort()
 
 
-
-
-def dep(products):
-    for product in products:
-        for dep in departments:
-            return products["department"] == dep
-            print(len(filter(dep, products)))
-
-
-match=[]
-for product in products:
-    for dep in departments:
-        len(product["name"])
-            if product["department"] == dep:
-        match.append(product["name"])
-print(match)
-
-
+def get_products(department_name):
+  return [product for product in products if product["department"] == department_name]
 
 print "There Are".upper(),len(departments),"Departments:".upper()
 for dep in departments:
-    print "+",dep.title()
-
-
-
-
-print(departments)
+    matching_products= get_products(dep)
+    print "+",dep.title(),"(",str(len(matching_products)),"Products)"
