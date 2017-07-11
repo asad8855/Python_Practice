@@ -23,21 +23,52 @@ products = [
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ]
 
+
+
 def product_name(product):
     return product["name"]
 products=sorted(products,key=product_name)
 
-print "There Are".upper(),len(products),"Products".upper()
+print "There Are".upper(),len(products),"Products:".upper()
 
 for product in products:
-    print "+",product["name"],"($",product["price"],")"
+    price_usd = ' (${0:.2f})'.format(product["price"])
+    print(" + " + product["name"] + price_usd)
+
 
 print "--------------"
 
 departments=[]
 for product in products:
     departments.append(product["department"])
-departments.sort()
 departments=list(set(departments))
+departments.sort()
+
+
+
+
+def dep(products):
+    for product in products:
+        for dep in departments:
+            return products["department"] == dep
+            print(len(filter(dep, products)))
+
+
+match=[]
+for product in products:
+    for dep in departments:
+        len(product["name"])
+            if product["department"] == dep:
+        match.append(product["name"])
+print(match)
+
+
+
+print "There Are".upper(),len(departments),"Departments:".upper()
+for dep in departments:
+    print "+",dep.title()
+
+
+
 
 print(departments)
