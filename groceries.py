@@ -51,4 +51,4 @@ def get_products(department_name):
 print "There Are".upper(),len(departments),"Departments:".upper()
 for dep in departments:
     matching_products= get_products(dep)
-    print "+",dep.title(),"(",str(len(matching_products)),"Products)"
+    print("+" + dep.title() + "(" + str(len(matching_products))+ " " + "Products)")
