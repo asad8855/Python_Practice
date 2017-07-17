@@ -1,0 +1,9 @@
+SQL Syntax
+select (similar to print function; mathematical operators and transformations)
+SELECT 1+3 AS number;  * means select entire dataset
+form (a certain table)
+where (a certain or multiple conditions are true) =,>,< logical operators, LIKE '%', IN BETWEEN AND, OR  NOT negates verbal operators
+group by having
+order by (order by a certain variable)
+limit
+;
