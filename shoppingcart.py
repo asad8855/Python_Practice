@@ -73,21 +73,3 @@ print("Plus NYC Sales Tax (8.875%): ", tax)
 print("Total: ",total)
 print("-------------------------------")
 print("Don't come back you're wasting your money")
-
-
-
-
-
-
-
-
-
-# def get_products(department_name):
-#   return [product for product in products if product["department"] == department_name]
-
-# print "There Are".upper(),len(departments),"Departments:".upper()
-# for dep in departments:
-#     matching_products= get_products(dep)
-#     print("+" + dep.title() + "(" + str(len(matching_products))+ " " + "Products)")
-#
-# print(product_ids)
