@@ -1,0 +1,71 @@
+Command line computing
+
+whoami
+Present Working Directory
+
+Print the current/present working directory.
+
+cd
+List Files in a Directory
+
+List files in the current working directory.
+
+dirNavigate and Manage Directories
+
+Change directories (specifying absolute file path).
+
+cd C:\Users\YOUR_USERNAME\Desktop\ # where YOUR_USERNAME is the name of the user currently operating your local machine
+Make a new directory.
+
+mkdir my_folder
+Remove a directory.
+
+rmdir my_folder
+Manage Files
+
+Change directories (using relative file path).
+
+cd my_folder # first re-create this directory if it doesn't exist, else this will trigger an error
+Create a file.
+
+type nul > README.md
+type nul > index.html
+type nul > my_data.csv
+type nul > my_message.txt
+Remove/delete a file.
+
+del index.html
+Edit and save a file, using a text editor like nano, atom, sublime, or vim.
+
+atom my_message.txt # requires "Install Shell Commands" from the Atom Settings
+Print file contents.
+
+type my_message.txt
+Move a file to target location.
+
+move C:\Users\YOUR_USERNAME\Desktop\my_folder\my_message.txt C:\Users\YOUR_USERNAME\Desktop
+Copy a file.
+
+xcopy C:\Users\YOUR_USERNAME\Desktop\my_message.txt C:\Users\YOUR_USERNAME\Desktop\my_folder
+Copy contents of a file into the clipboard for pasting.
+
+type C:\Users\YOUR_USERNAME\Desktop\my_folder\my_message.txt | clip
+# ... then just paste as you normally would after copying some text
+Further Exploration
+
+Optionally explore additional command-line interfaces, if you're curious.
+
+Internet Computing
+
+Trace the route traveled by a network request:
+
+tracert google.com # stop after a few seconds if necessary by pressing: control + c
+Time the duration of a network request:
+
+ping google.com # stop after a few seconds if necessary by pressing: control + c
+Download the cURL utility if necessary, then request the contents of a webpage:
+
+curl google.com
+curl http://www.google.com
+curl https://raw.githubusercontent.com/debate-watch/twenty_sixteen/master/lib/twenty_sixteen/candidates.json
+You may need to execute these commands from within the downloaded directory. See "Installing cURL on Windows" for more support.
